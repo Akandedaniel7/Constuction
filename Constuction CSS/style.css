@@ -6,6 +6,7 @@
     --black: rgb(8, 8, 8);
     --white: rgb(255, 255, 255);
     --hover: rgb(101, 228, 165);
+    --hover-2: rgb(184, 240, 212);
 
     /* Fonts */
     --lg-sm: 300;
@@ -60,10 +61,10 @@ input, textarea{
 /* ================================================== Header Section ======================================= */
 header{
     background: var(--white);
-    position: fixed;
+    /* position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
+    left: 0; */
     height: 3rem;
 }
 
@@ -119,7 +120,7 @@ nav ul li a:hover{
 
 .header-description h3{
     color: var(--light-green);
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-weight: var(--lg-ss);
     padding: 10px 0px;
 }
@@ -189,7 +190,7 @@ nav ul li a:hover{
     font-size: 3rem;
     font-weight: var(--lg-xx);
     font-family: sans-serif;
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .about-story{
@@ -236,7 +237,7 @@ nav ul li a:hover{
    padding-right: 15rem;
 }
 
-.about-description-flex-2 button{
+.btn{
     padding: 12px 20px;
     margin-top: 2rem;
     background: var(--black);
@@ -247,6 +248,113 @@ nav ul li a:hover{
     font-weight: var(--lg-ss);
 }
 
-.about-description-flex-2 button:hover{
-    background: var(--hover)
+.btn:hover{
+    background: var(--hover);
+}
+
+/* ======================================= Service Section ================================ */
+.service{
+    background-image: url("/Construction images/Tv image.webp");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    position: relative; 
+}
+
+.service-description{
+    position: absolute;
+    margin-top: 7rem;
+    left: 6rem;
+}
+
+.service-description h1{
+    font-family: sans-serif;
+    font-weight: var(--lg-xx);
+    font-size: 3rem;
+    padding: 2px 0px 12px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.service-description h3{
+    padding: 1px 0px 12px;
+    font-weight: var(--lg-ss);
+    color: var(--white);
+
+}
+
+.service-description p{
+    padding-right: 45rem;
+    color: var(--white);
+}
+
+.service-work{
+    background-color: var(--black);
+}
+
+.service-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0px;
+    position: relative;
+}
+
+.service-work-flex-1{
+    background-color: var(--light-green);
+    height: 56.5vh;
+    width: 36%;
+    padding: 6rem 3rem 2rem;
+}
+
+.service-work-flex-1 h3{
+    padding: 2px 0px 6px;
+    font-weight: var(--lg-ss);
+    font-family: sans-serif;
+}
+
+.service-work-flex-1 h2{
+    padding: 2px 0px 26px;
+    font-weight: var(--lg-xx);
+    font-family: sans-serif;
+}
+
+.btn-2{
+    padding: 12px 26px;
+    border-radius: 3px;
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.btn-2:hover{
+    background-color: var(--hover-2);
+}
+
+.service-openHours{
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.service-openHours img{
+   width: 80%;
+   height: 70vh;
+   margin-top: 3rem;
+   margin-bottom: 14px;
+}
+
+.service-openHours h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: var(--lg-xx);
+    font-family: serif;
+    padding: 2px 0px 10px;
+}
+
+.service-openHours p{
+    padding: 3px 0px;
 }
