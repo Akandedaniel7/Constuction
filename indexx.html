@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>Random</h1>
+    </section>
+        <style>
+            section{
+                background-image: url("/Construction images/oli tank.webp");
+                height: 100vh;
+                width: 100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            h1{
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                mix-blend-mode: screen;
+                background-color: grey;
+            }
+
+        </style>
+    
+
+    <script>
+
+        var section = document.querySelector("section");
+
+        var images = [
+            'url("/Construction images/oli tank.webp")',
+            'url("/Construction images/worker.webp")',
+            'url("/Construction images/worker.webp")',
+            'url("/Construction images/oli tank.webp")',
+            'url("/Construction images/worker.webp")',
+            'url("/Construction images/worker.webp")',
+            'url("/Construction images/oli tank.webp")'
+        ];
+        
+        setInterval(function(){  
+
+        var bg = images[Math.floor(Math.random() * images.lenght)]
+
+        section.style.background = bg
+        },1000)
+
+    </script>
+</body>
+</html>

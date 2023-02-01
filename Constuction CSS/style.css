@@ -42,7 +42,7 @@ li{
 }
 
 button{
-    cursor: pointer;
+    cursor: pointer !important;
     border: none;
     outline: none;
 }
@@ -56,7 +56,11 @@ input, textarea{
     padding: 0px 10rem;
 }
 
-
+textarea,
+input{
+    outline: none;
+    border: none;
+}
 
 /* ================================================== Header Section ======================================= */
 header{
@@ -238,14 +242,20 @@ nav ul li a:hover{
 }
 
 .btn{
+    margin-top: 4rem;
+}
+
+.btn a{
     padding: 12px 20px;
-    margin-top: 2rem;
     background: var(--black);
-    color: var(--white);
     transition: var(--transition);
     border-radius: 2px;
     font-size: 16px;
     font-weight: var(--lg-ss);
+}
+
+.btn a{
+    color: var(--white);
 }
 
 .btn:hover{
@@ -324,10 +334,13 @@ nav ul li a:hover{
 .btn-2{
     padding: 12px 26px;
     border-radius: 3px;
-    color: var(--white);
     background-color: var(--black);
     font-size: 16px;
     transition: var(--transition);
+}
+
+.btn-2 a{
+    color: var(--white);
 }
 
 .btn-2:hover{
@@ -357,4 +370,117 @@ nav ul li a:hover{
 
 .service-openHours p{
     padding: 3px 0px;
+    font-weight: var(--lg-ss);
+}
+
+.about-products-section{
+    background-color: var(--black);
+}
+
+.service-story{
+    background: var(--black);
+}
+
+.service-story-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0px;
+    gap: 1rem;
+}
+
+.service-story-flex-1{
+    flex-basis: 90%;
+}
+
+.service-story-flex-1 img{
+    width: 750px;
+    cursor: pointer;
+}
+
+.service-story-flex-2{
+   flex-basis: 100%;
+   text-align: center;
+}
+
+.service-story-flex-2 h1{
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: var(--lg-xx);
+    font-size: 3rem;
+    padding: -15px 0px 10px;
+
+}
+
+.service-story-flex-2 h3{
+    color: var(--white);
+    padding: 9px 0px 19px;
+}
+
+.btn-3 {
+    padding: 12px 20px;
+    background: var(--light-green); 
+    color: var(--white);
+    transition: var(--transition);
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: var(--lg-ss);
+    margin-top: 19px;
+    border: 1px solid var(--light-green);
+}
+
+.btn-3 a{
+   color: var(--white);
+}
+
+ .btn-3:hover{
+    background: transparent;
+} 
+
+
+/* ================================================ Contact Us section ========================== */
+.contact{
+    align-items: center;
+    text-align: center;
+    padding: 4rem 10rem;
+}
+
+.contact img{
+   width: 75%;
+}
+
+.contact h1{
+    font-weight: var(--lg-xx);
+    font-size: 3rem;
+    padding: 14px 0px;
+    text-transform: uppercase;
+}
+
+.contact-form{
+    width: 100%;
+}
+
+.contact-form-name{
+    width: 49%;
+}
+
+.contact-form-email{
+    width: 49%;
+}
+
+.contact-form-subject{
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.contact-form-message{
+    display: block;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+input{
+    padding: 13px 0px;
+    background: transparent;
 }
