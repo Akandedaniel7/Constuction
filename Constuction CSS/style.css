@@ -5,7 +5,7 @@
     --light-green: rgb(79, 247, 164);
     --black: rgb(8, 8, 8);
     --white: rgb(255, 255, 255);
-    --hover: rgb(101, 228, 165);
+    --hover: rgb(83, 155, 120);
     --hover-2: rgb(184, 240, 212);
 
     /* Fonts */
@@ -15,7 +15,8 @@
     --lg-xx: 900;
 
     /* Transition */
-    --transition: all 0.4s;
+    --transition: all .8s;
+    --transition-2: ease 1.3s; 
 }
 
 *{
@@ -60,6 +61,10 @@ textarea,
 input{
     outline: none;
     border: none;
+}
+
+img{
+    object-fit: cover;
 }
 
 /* ================================================== Header Section ======================================= */
@@ -245,7 +250,7 @@ nav ul li a:hover{
     margin-top: 4rem;
 }
 
-.btn a{
+.btn{
     padding: 12px 20px;
     background: var(--black);
     transition: var(--transition);
@@ -441,12 +446,12 @@ nav ul li a:hover{
 /* ================================================ Contact Us section ========================== */
 .contact{
     align-items: center;
-    text-align: center;
     padding: 4rem 10rem;
 }
 
 .contact img{
    width: 75%;
+   object-fit: cover;
 }
 
 .contact h1{
@@ -454,6 +459,7 @@ nav ul li a:hover{
     font-size: 3rem;
     padding: 14px 0px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .contact-form{
@@ -480,7 +486,99 @@ nav ul li a:hover{
     margin: 10px 0px;
 }
 
-input{
+input,
+textarea{
     padding: 13px 0px;
     background: transparent;
-}   
+    border-bottom: 1px solid var(--black);
+    transition: var(--transition-2);
+} 
+
+input::placeholder,
+textarea::placeholder{
+    font-size: 16px;
+    margin-left: 18px;
+}
+
+input:hover,
+textarea:hover{
+    border: 1px solid var(--black);
+}
+
+textarea{
+    resize: none;
+}
+
+.btn-4 a{
+    color: var(--white)
+}
+
+.btn-4{
+    background: var(--black);
+    margin: 19px 0px;
+    padding: 17px 29rem;
+    transition: var(--transition);
+    font-weight: var(--lg-ss);
+    font-size: 16px;
+}
+
+.btn-4:hover{
+    background: var(--hover);
+}
+
+.contact-location-details{
+    display: block;
+    margin: 2rem 0px;
+}
+
+.contact-location-details span{
+    display: block;
+    padding: 16px 0px;
+}
+
+.contact-location-details p{
+    padding: 10px 0px;
+}
+
+.contact-social-link a{
+    color: var(--black);
+}
+
+.contact-social-link a i{
+    font-size: 26px;
+}
+
+.contact-social-link a i:hover{
+    transform: scale(8);
+}
+
+/* ======================= Back-to-top ======================== */
+.back-to-top{
+    background: linear-gradient(var(--light-green), var(--black));
+    position: fixed;
+    bottom: 16px;
+    right: 29px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    font-size: 32px;
+    color: var(--white);
+    justify-content: center;
+    text-decoration: none;
+    display: flex;
+    pointer-events: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.back-to-top a {
+    color: var(--white)
+}
+
+.back-to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
