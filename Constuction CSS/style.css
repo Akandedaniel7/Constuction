@@ -105,9 +105,14 @@ img{
 .header-description{
     background-color: var(--black);
     margin-top: 3rem;
-    text-align: center;
+    text-align: center;     
     align-items: center;
     padding: 32px 0px;
+}
+
+.header-description img{
+    width: 80px;
+    border-radius: 4px;
 }
 
 .header-description h3{
@@ -115,6 +120,7 @@ img{
     text-transform: uppercase;
     font-weight: var(--lg-ss);
     padding: 10px 0px;
+    font-size: 19px;
 }
 
 /* Body Description */
@@ -194,13 +200,15 @@ img{
 .about-story h3{
     color: var(--white);
     padding: 19px 0px;
+    font-size: 32px;
 }
 
 .about-story p{
     color: var(--white);
     padding: 16px 16.1rem 5rem;
     letter-spacing: 1px;
-    line-height: 21px;
+    line-height: 25px;
+    font-size: 17px;
 }
 
 .about-description-flex{
@@ -227,6 +235,7 @@ img{
 .about-description-flex-2 p{
    padding: 5px 0px;
    padding-right: 15rem;
+   line-height: 22px;
 }
 
 .btn{
@@ -264,7 +273,7 @@ img{
 
 .service-description{
     position: absolute;
-    margin-top: 7rem;
+    margin-top: 3rem;
     left: 6rem;
 }
 
@@ -278,15 +287,16 @@ img{
 }
 
 .service-description h3{
-    padding: 1px 0px 12px;
+    padding: 1px 0px 5px;
     font-weight: var(--lg-ss);
     color: var(--white);
-
+    font-size: 19px;
 }
 
 .service-description p{
     padding-right: 45rem;
     color: var(--white);
+    line-height: 25px;
 }
 
 .service-work{
@@ -334,6 +344,26 @@ img{
 
 .btn-2:hover{
     background-color: var(--hover-2);
+}
+
+.service-work-flex-2-img1{
+    width: 537px;
+}
+
+.service-work-flex-2-img2{
+    width: 537px;
+}
+
+.service-work-flex-2-img3{
+    width: 547px;
+}
+
+.service-work-flex-2-img4{
+    width: 537px;
+}
+
+.service-work-flex-2-img5{
+    width: 660px;
 }
 
 .service-openHours{
@@ -425,7 +455,7 @@ img{
     }
 
     70%{
-        left: -200%;
+       left: -200%;
     }
 
     75{
@@ -623,4 +653,48 @@ textarea{
     bottom: 32px;
     pointer-events: auto;
     opacity: 1;
+}
+
+/* =============== Break Points ============ */
+
+/* ============== For Large devices =============== */
+@media screen and (max-width: 1200px){
+    .about-description-flex-2 h1{
+        font-size: 2.3rem;
+    }
+
+    .about-description-flex-2 h3{
+        font-size: 1.5rem;
+    }
+
+    .about-description-flex-2 p{
+        padding-right: 6.5rem;
+    }
+
+    .service{
+        height: 58vh;
+    }
+
+    .service-description p{
+        padding-right: 40rem;
+    }
+
+    .service-work-flex-1{
+        height: 45vh;
+    }
+
+    .service-work-flex-2-img1,
+    .service-work-flex-2-img2,
+    .service-work-flex-2-img4{
+        width: 454px;
+    }
+
+    .service-work-flex-2-img3{
+        width: 472px;
+    }
+
+    .service-work-flex-2-img5{
+        width: 56px;
+    }
+    
 }
