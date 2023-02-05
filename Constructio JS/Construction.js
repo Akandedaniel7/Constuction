@@ -22,34 +22,37 @@ contactEmail = document.getElementById("contact-email"),
 Message = document.getElementById("message"),
 contactMessage = document.getElementById("contact-message");
 
-e.preventDefault()
+const sendEmail = (e) => {
+    e.preventDefault();
 
- if (
-    contactName.value === '' ||
-    contactEmail.value === '' ||
-    Message.value === ''
-    ) {
-    contactMessage.classList.remove('color-light');
-    contactMessage.classList.add('color-dark');
+    if (contactMe.value === "" || emailMe.value === ""|| messageMe.value === "" ) {
+         contactMessage.classList.remove('color-light');
+         contactMessage.classList.add('color-dark');
 
-    contactMessage.textContent = 'Write all the input fields'
-
-    else{
-      emailjs.sendForm('service_2zpsd8i',
-       'template_dx4ccww',
-        '#contact-form',
-         'PzQEiD2iWAjgdnbjt'
-         );
-         .then(() => {
+        contactMessage.textContent = 'Write all the input fields';
+         }else{
+        emailjs
+         .sendForm('service_2zpsd8i', 
+            'template_dx4ccww',
+             '#contact-form', 
+             'PzQEiD2iWAjgdnbjt')
+        .then(
+            () =>{
             contactMessage.classList.add('color-light');
-            contactMessage.textContent = 'Message Sent ✔';
+            contactMessage.textContent = 'Message sent';
 
-            setTimeout(() => {
+            setTimeout(() =>{
                 contactMessage.textContent = '';
             }, 5000);
-         })
+        },
+         (error) => {
+            alert('OOPs! SOMETHING WENT WRONG...', error);
+        }
+        );
+        nameMe.value = '';
+        emailMe.value = '';
+        messageMe.value = '';
     }
-}
-
+};
 
 contactForm.addEventListener('submit', sendEmail);
