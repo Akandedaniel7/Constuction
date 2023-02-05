@@ -51,8 +51,8 @@
 
     <section id="container" class="body-description">
         <img src="/Construction images/building.jpg" alt="Building">
-        <h3><i>Your Trusted Architects and Designer</i></h3>
-        <h1>Architects and Design Professionals</h1>
+        <h3><i>Your reliable factor of safety</i></h3>
+        <h1>Architectural | Structural | General Civil Works</h1>
         <button><a href="#contact">Learn More</a></button>
     </section>
 
@@ -215,12 +215,13 @@
         <div class="contact">
             <img src="/Construction images/construction image-1.jpg" alt="">
             <h1>Contact us</h1>
-            <form action="" class="contact-form">
-                <input type="text"placeholder="Name" class="contact-form-name">
-                <input type="email" placeholder="Email" class="contact-form-email">
-                <input type="text" placeholder="Subject" class="contact-form-subject">
-                <textarea id="" cols="30" rows="10" placeholder="Type your message here..." class="contact-form-message"></textarea>
-                <button class="btn-4"><a href="#">Submit</a></button>
+            <form action="" class="contact-form" id="contact-form">
+                <input type="text"placeholder="Name" name="name" class="contact-form-name" id="contact-name" >
+                <input type="email" name="email" placeholder="Email" class="contact-form-email">
+                <!-- <input type="text" placeholder="Subject" class="contact-form-subject"> -->
+                <textarea id="" cols="30" rows="10" name="message" placeholder="Type your message here..." class="contact-form-message" id="message"></textarea>
+                 <p class="contact__message" id="contact-message"></p> 
+                <button class="btn-4" type="submit">Submit</button>
             </form>
 
             <div class="contact-location-details">
@@ -256,8 +257,10 @@
     </footer>
 
 
-    
-    
+      <!-- =========================== Email js ========================= -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+       <!-- ========================== Main Js ========================= -->
     <script src="/Constructio JS/Construction.js"></script>
 </body>
 </html>
