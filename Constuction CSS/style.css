@@ -193,14 +193,13 @@ img{
 
 .about-story{
     background-color: var(--black);
-    align-items: center;
-    text-align: center;
 }
 
 .about-story h3{
     color: var(--white);
     padding: 19px 0px;
     font-size: 32px;
+    text-align: center;
 }
 
 .about-story p{
@@ -287,7 +286,7 @@ img{
 }
 
 .service-description h3{
-    padding: 1px 0px 5px;
+    padding: 1px 0px 12px;
     font-weight: var(--lg-ss);
     color: var(--white);
     font-size: 19px;
@@ -363,7 +362,7 @@ img{
 }
 
 .service-work-flex-2-img5{
-    width: 660px;
+    width: 580px;
 }
 
 .service-openHours{
@@ -720,10 +719,36 @@ textarea{
        padding: 50px 60px;
     }
     .about-description-flex-2 p {
-        padding-right: 7px;
+        padding-right: 1px;
+        margin-bottom: -3rem;
       }
 
-      .about-description-flex-1 {
-        flex-basis: 10%;
+      .about-description-flex-1 img{
+        width: 100%;
+      }
+
+      .about-description-flex-1{
+        flex-basis: 100%;
+      }
+
+      .about-description-flex-2{
+        flex-basis: 80%;
+      }
+
+      .about-story p{
+        padding: 16px 5rem 3rem;
+      }
+
+      .service-description h1{
+        font-size: 2rem;
+      }
+
+      .service-description h3{
+        font-size: 16px;
+      }
+
+      .service-description p{
+        font-size: 15px;
+        padding-right: 20rem;
       }
 }

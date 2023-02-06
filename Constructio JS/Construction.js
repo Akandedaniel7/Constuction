@@ -16,43 +16,30 @@ window.addEventListener("scroll", () => {
 })
 
 /* ================================ Contact Validation ================================= */
-const contactForm = document.getElementById("contact-form"),
-contactName = document.getElementById("contact-name"),
-contactEmail = document.getElementById("contact-email"),
-Message = document.getElementById("message"),
-contactMessage = document.getElementById("contact-message");
+// const contactForm = document.getElementById("contact-form"),
+// contactName = document.getElementById("contact-name"),
+// contactEmail = document.getElementById("contact-email"),
+// Message = document.getElementById("message"),
+// contactMessage = document.getElementById("contact-message");
 
-const sendEmail = (e) => {
-    e.preventDefault();
-
-    if (contactMe.value === "" || emailMe.value === ""|| messageMe.value === "" ) {
-         contactMessage.classList.remove('color-light');
-         contactMessage.classList.add('color-dark');
-
-        contactMessage.textContent = 'Write all the input fields';
-         }else{
-        emailjs
-         .sendForm('service_2zpsd8i', 
-            'template_dx4ccww',
-             '#contact-form', 
-             'PzQEiD2iWAjgdnbjt')
-        .then(
-            () =>{
-            contactMessage.classList.add('color-light');
-            contactMessage.textContent = 'Message sent';
-
-            setTimeout(() =>{
-                contactMessage.textContent = '';
-            }, 5000);
-        },
-         (error) => {
-            alert('OOPs! SOMETHING WENT WRONG...', error);
-        }
-        );
-        nameMe.value = '';
-        emailMe.value = '';
-        messageMe.value = '';
+function sendMail(){
+    let contactValue = {
+        name: document.getElementById("contact-name").value,
+        email: document.getElementById("contact-email").value,
+        Message: document.getElementById("message").value,  
     }
-};
+}
 
-contactForm.addEventListener('submit', sendEmail);
+    const servicesID = 'service_60veax9';
+    const emailTemplate = 'template_msnt08u';
+    
+    emailjs
+    .send(servicesID, emailTemplate, contactValue)
+    .then((res) => {
+            document.getElementById("contact-name").value = "";
+            document.getElementById("contact-email").value = "";
+            document.getElementById("message").value = "";
+            console.log(res);
+            alert("Your message sent succefully");
+    })
+    .catch((err) => console.log(err));
