@@ -12,6 +12,9 @@ window.addEventListener("scroll", () => {
   }
 });
 
+/* ============ SIDE MENU =========== */
+
+
 /* ================================ Contact Validation ================================= */
 
 // const contactForm = document.getElementById("contact-form"),
