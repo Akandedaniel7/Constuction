@@ -773,6 +773,8 @@ textarea{
         height: 37.5vh;
         width: 39%;
     }
+
+
 }
 
 @media screen and (max-width: 800px){
@@ -832,6 +834,22 @@ textarea{
     object-fit: cover;
   }
 
+  .body-description h1 {
+    font-size: 1.7rem;
+  }
+
+  input{
+    margin: 6px 0px;
+  }
+
+  .contact-form-name{
+    width: 100%;
+}
+
+.contact-form-email{
+    width: 100%;
+}
+
 }
 
 @media screen and (max-width: 640px){
@@ -879,8 +897,117 @@ textarea{
     font-size: 25px;
 }
 
-nav .ri-close-fill{
+   nav .ri-close-fill{
     display: block;
     font-size: 25px;
+  }
+
+  .btn-4 {
+    padding: 17px 13rem;
+  }
+
+  .service-description p {
+    padding-right: 2rem;
+  }
+  
+  .about-text-child h2{
+    width: 50%;
+    padding-top: 4%;
+    padding-bottom: 40px;
+  }
+
+  .about-description-flex-2 h1 {
+    font-size: 1.8rem;
+  }
+
 }
+
+@media screen and (max-width: 550px){
+    .body-description h1{
+        padding: 7px 1rem;
+        font-size: 1.3rem;
+    }
+
+    .about-story p {
+        padding: 16px 10px 3rem;
+      }
+
+      .btn-4 {
+        padding: 17px 10rem;
+      }
+}
+
+@media screen and (max-width: 450px){
+    .service-description{
+        left: 2rem;
+    }
+
+    .service-description p {
+        padding-right: 2px;
+      }
+
+      .btn-4 {
+        padding: 17px 6rem;
+      }
+
+      .nav-section img {
+        width: 13%;
+      }
+
+      .about-description-flex{
+        padding: 50px 10px;
+        gap: 1rem;
+     }
+
+     .service-work-flex-2{
+         padding: 0px 1px;
+       }
+
+       .service-work-flex-1 {
+        width: 100%;
+      }
+
+      .service-openHours img {
+        width: 100%;
+      }
+
+      .service-story-flex-2 h1{
+        font-size: 1.7rem;
+      }
+
+      .contact img {
+        width: 100%;
+        object-fit: fill;
+      }
+
+      .body-description img {
+        width: 100%;
+      }
+
+      .body-description h1 {
+        padding: 7px 1px;
+        font-size: 1rem;
+      }
+
+      .about-story p{
+        font-size: 14px;
+      }
+
+      .about-text-child h2 {
+        font-size: 1.3rem;
+      }
+
+      .about-text{
+        height: 30vh;
+      }
+
+      .about-text-child h2{
+        padding-top: 4%;
+        padding-bottom: 37px;
+        margin-top: 3rem;
+      }
+
+      .contact h1{
+        font-size: 2rem;
+      }
 }
