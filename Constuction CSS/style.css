@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
 
 :root{
     /* Colors */
-    --light-green: rgb(79, 247, 164);
+    --light-green: rgb(255, 255, 255);
     --black: rgb(8, 8, 8);
-    --white: rgb(255, 255, 255);
-    --hover: rgb(83, 155, 120);
+    --white: rgb(11, 60, 150);
+    --hover: rgb(94, 146, 242);
     --hover-2: rgb(184, 240, 212);
 
     /* Fonts */
-    --lg-sm: 300;
-    --lg-xm: 400;
+    --lg-sm: 400;
+    --lg-xm: 600;
     --lg-ss: 700;
     --lg-xx: 900;
 
@@ -31,7 +31,7 @@ html{
 
 body{
     background-color: var(--light-green);
-    font-family: 'Merriweather', serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 a{
@@ -69,7 +69,7 @@ img{
 
 /* ================================================== Header Section ======================================= */
 .header{
-    padding: 3px 2rem;
+    padding: 10px 2rem;
     background-color: var(--white);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -81,7 +81,7 @@ img{
 }
 
 .nav-section img{
-    width:6%;
+    width: 7%;
 }
 
 .nav-section ul{
@@ -92,13 +92,15 @@ img{
 }
 
 .nav-section ul li a{
-    color: var(--black);
+    color: var(--light-green);
     font-weight: var(--lg-xx);
     transition: var(--transition);
 }
 
 .nav-section ul li a:hover{
-   color: var(--hover);
+   background: var(--hover);
+   border-radius: 2px;
+   padding: 8px 10px;
 }
 
 .toggle{
@@ -304,7 +306,7 @@ img{
 }
 
 .service-work{
-    background-color: var(--black);
+    background-color: var(--white);
 }
 
 .service-flex{
@@ -524,12 +526,13 @@ img{
 .contact{
     align-items: center;
     padding: 4rem 10rem;
+    background: var(--white);
 }
 
-.contact img{
+/* .contact img{
    width: 75%;
    object-fit: cover;
-}
+} */
 
 .contact h1{
     font-weight: var(--lg-xx);
@@ -537,6 +540,7 @@ img{
     padding: 14px 0px;
     text-transform: uppercase;
     text-align: center;
+    color: var(--light-green)
 }
 
 .contact-form{
@@ -579,8 +583,9 @@ input,
 textarea{
     padding: 13px 0px;
     background: transparent;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--light-green);
     transition: var(--transition-2);
+    color: var(--light-green);
 } 
 
 input::placeholder,
@@ -591,24 +596,21 @@ textarea::placeholder{
 
 input:hover,
 textarea:hover{
-    border: 1px solid var(--black);
+    border: 1px solid var(--light-green);
 }
 
 textarea{
     resize: none;
 }
 
-.btn-4 a{
-    color: var(--white)
-}
-
 .btn-4{
-    background: var(--black);
+    background: var(--hover);
     margin: 19px 0px;
     padding: 17px 29rem;
     transition: var(--transition);
     font-weight: var(--lg-ss);
     font-size: 16px;
+    color: var(--light-green);
 }
 
 .btn-4:hover{
@@ -627,10 +629,11 @@ textarea{
 
 .contact-location-details p{
     padding: 10px 0px;
+    color: var(--light-green)
 }
 
 .contact-social-link a i{
-    color: var(--black);
+    color: var(--light-green);
 }
 
 .contact-social-link i{
