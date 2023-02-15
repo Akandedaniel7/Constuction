@@ -964,7 +964,7 @@ textarea{
 
 }
 
-/* @media (orientation: portrait) and (min-width: 900px) and (max-width: 1200px){
+ @media (orientation: portrait) and (min-width: 900px) and (max-width: 1200px){
     .about-text{
         height: 36vh;
     }
@@ -990,7 +990,7 @@ textarea{
     .service-work-flex-1{
         height: 35vh;
     }
-} */
+} 
 
 
 
