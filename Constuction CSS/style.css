@@ -761,7 +761,7 @@ textarea{
 /* =============== Break Points ============ */
 
 /* ============== For Large devices =============== */
-@media screen and (max-width: 1200px){
+@media  (max-width: 1200px){
     .about-description-flex-2 h1{
         font-size: 2.3rem;
     }
@@ -806,16 +806,13 @@ textarea{
     
 }
 
-@media screen and (max-width: 1100px){
-    .container{
-        max-width: 960px;
-    }
+@media  (max-width: 1100px){
     .about-description-flex{
        padding: 50px 60px;
     }
     .about-description-flex-2 p {
         padding-right: 1px;
-        margin-bottom: -3rem;
+        margin-bottom: 3rem;
       }
 
       .about-description-flex-1 img{
@@ -859,7 +856,7 @@ textarea{
 
 }
 
-@media screen and (max-width: 800px){
+@media  (max-width: 800px){
     /* .container{
         max-width: 760px;
     } */
@@ -934,7 +931,37 @@ textarea{
 
 }
 
-@media screen and (max-width: 640px){
+@media (orientation: portrait) and (min-width: 900px) and (max-width: 1200px){
+    .about-text{
+        height: 36vh;
+    }
+
+    .service{
+        height: 36vh;
+    }
+
+    .service-work-flex-1{
+        height: 30vh;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 900px) and (max-width: 1200px){
+    .about-text{
+        height: 45vh;
+    }
+
+    .service{
+        height: 55vh;
+    }
+
+    .service-work-flex-1{
+        height: 35vh;
+    }
+}
+
+
+
+@media all and (max-width: 640px){
    .container{
     max-width: 700px;
    }
@@ -1004,7 +1031,7 @@ textarea{
 
 }
 
-@media screen and (max-width: 550px){
+@media all and (max-width: 550px){
     .body-description h1{
         padding: 7px 1rem;
         font-size: 1.3rem;
@@ -1019,7 +1046,7 @@ textarea{
       }
 }
 
-@media screen and (max-width: 450px){
+@media all and (max-width: 450px){
     .service-description{
         left: 2rem;
     }
