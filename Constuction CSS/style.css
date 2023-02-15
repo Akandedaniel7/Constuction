@@ -316,6 +316,7 @@ a.active,a:hover{
     justify-content: center;
     padding: 2rem 0px;
     position: relative;
+    padding: 2rem 30px;
 }
 
 .service-work-flex-1{
@@ -762,6 +763,9 @@ textarea{
 
 /* ============== For Large devices =============== */
 @media  (max-width: 1200px){
+    .about-text{
+        height: 41vh;
+    }
     .about-description-flex-2 h1{
         font-size: 2.3rem;
     }
@@ -775,7 +779,7 @@ textarea{
     }
 
     .service{
-        height: 65vh;
+        height: 55vh;
     }
 
     .service-description p{
@@ -783,7 +787,7 @@ textarea{
     }
 
     .service-work-flex-1{
-        height: 45vh;
+        height: 37vh;
     }
 
     .service-work-flex-2-img1,
@@ -802,6 +806,7 @@ textarea{
 
     .btn-4{
         padding: 17px 20rem;
+        margin-left: 5rem;
     }
     
 }
@@ -845,7 +850,7 @@ textarea{
       }
 
       .service-work-flex-2-img5{
-        width: 500px;
+        width: 580px;
     }
     
     .service-work-flex-1-child-5{
@@ -853,7 +858,35 @@ textarea{
         width: 39%;
     }
 
+    .nav-section ul{
+        gap:v 1.5rem;
+    }
+}
 
+@media  (max-width: 900px){
+    input{
+        margin: 6px 0px 6px;
+    }
+    .contact-form-name {
+        width: 100%;
+      }
+
+      .contact-form-email {
+        width: 100%;
+      }
+
+    .btn-4 {
+        padding: 17px 17rem;
+        margin-left: 1rem;
+    }
+
+    .service {
+        height: 48vh;
+      }
+
+      .about-text{
+        height: 38vh;
+      }
 }
 
 @media  (max-width: 800px){
@@ -931,7 +964,7 @@ textarea{
 
 }
 
-@media (orientation: portrait) and (min-width: 900px) and (max-width: 1200px){
+/* @media (orientation: portrait) and (min-width: 900px) and (max-width: 1200px){
     .about-text{
         height: 36vh;
     }
@@ -941,7 +974,7 @@ textarea{
     }
 
     .service-work-flex-1{
-        height: 30vh;
+        height: 39vh;
     }
 }
 
@@ -957,7 +990,7 @@ textarea{
     .service-work-flex-1{
         height: 35vh;
     }
-}
+} */
 
 
 
