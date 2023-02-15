@@ -31,15 +31,23 @@
     <nav class="nav-section header">
         <img src="/Construction images/favicon.jpg" alt="Header">
         <ul id="sidemenu">
-          <li class="active">
-            <a href="#home">HOME</a>
+
+          <li>
+            <a href="#home" class="active">HOME</a>
           </li>
+
           <li>
             <a href="#about">ABOUT</a>
           </li>
+
           <li>
             <a href="#service">SERVICE</a>
           </li>
+
+          <li>
+            <a href="#gallery">GALLERY</a>
+          </li>
+          
           <li>
             <a href="#contact">CONTACT</a>
           </li>
@@ -56,7 +64,7 @@
             <img src="/Construction images/header-image.jpg" alt="Personal Image">
             <h3>Arcrade Stuctures International Limited</h3>
         </div>       
-    </section>
+    </section> 
 
     <!-- Body Description -->
 
@@ -64,8 +72,8 @@
         <img src="/Construction images/building.jpg" alt="Building">
         <h3><i>Your reliable factor of safety</i></h3>
         <h1>Architectural | Structural | General Civil Works</h1>
-        <button><a href="#contact">Learn More</a></button>
-    </section>
+        <a href="#contact">Learn More</a>
+    </section> 
 
     <!-- =================================== About Section ====================================== -->
     <section id="about">
@@ -102,16 +110,16 @@
            <p>When you want the best outcomes, you need the best content. As an architect or design professional, to truly ensure that
              your design is realized, it is essential that you have access to CAD details, BIM objects, catalogues, galleries and specifications.
               Bringing manufacturer-specific content into your designs, without having to change applications or search the web is even better. </p>
-           <button class="btn"><a href="#contact">Get In Touch</a></button>
+           <a href="#contact" class="btn">Get In Touch</a>
            </div>
         </div>
         </div>
 
         </div>
-    </section>
+    </section> 
 
     <!-- ====================================== Service Section ==================================== -->
-    <section id="service">
+     <section id="service">
       <div class="container">
         <div class="service">
 
@@ -122,7 +130,7 @@
               Design, Foundation Constuction and Problems, Levelling and Surveying, Civil Engineering works, Prepartion of Engineering works, Preparation
               of Engineering Bills, Renovations Works, CAD and BIM trainings etc.
             </p>
-            <button class="btn description-btn"><a href="#contact">Get in Touch</a></button>
+            <a href="#contact" class="btn description-btn">Get in Touch</a>
             </div>
         </div>
 
@@ -131,7 +139,7 @@
           <div class="service-work-flex-1">
             <h3><i>Architectural Design</i></h3>
             <h2>Find and Win Design Work With Acrade</h2>
-            <button class="btn-2"><a href="#contact">Get In Touch</a></button>
+            <a href="#contact" class="btn-2">Get In Touch</a>
           </div>
 
           <div class="service-work-flex-2">
@@ -147,7 +155,7 @@
           <div class="service-work-flex-1">
             <h3><i>Structural Design</i></h3>
             <h2>Sweets makes it easy</h2>
-            <button class="btn-2"><a href="#contact">Get In Touch</a></button>
+            <a href="#contact" class="btn-2">Get In Touch</a>
           </div>
 
           <div class="service-work-flex-2">
@@ -163,7 +171,7 @@
           <div class="service-work-flex-1">
             <h3><i>CAD Tranning</i></h3>
             <h2>Plan to grow with confidence</h2>
-            <button class="btn-2"><a href="#contact">Get In Touch</a></button>
+            <a href="#contact" class="btn-2">Get In Touch</a>
           </div>
 
           <div class="service-work-flex-2">
@@ -179,7 +187,7 @@
           <div class="service-work-flex-1">
             <h3><i>Project Supervision</i></h3>
             <h2>Plan to grow with confidence</h2>
-            <button class="btn-2"><a href="#contact">Get In Touch</a></button>
+            <a href="#contact" class="btn-2">Get In Touch</a>
           </div>
 
           <div class="service-work-flex-2">
@@ -195,7 +203,7 @@
           <div class="service-work-flex-1 service-work-flex-1-child-5">
             <h3><i>Engineering Bills</i></h3>
             <h2>Plan to grow with confidence</h2>
-            <button class="btn-2"><a href="#contact">Get In Touch</a></button>
+            <a href="#contact" class="btn-2">Get In Touch</a>
           </div>
 
           <div class="service-work-flex-2">
@@ -246,27 +254,45 @@
           <div class="service-story-flex-2">
             <h1>Our Story</h1>
             <h3><i>An Architect You Can Trust</i></h3>
-            <button class="btn-3"><a href="#contact">Get in Touch</a></button>
+            <a href="#contact"class="btn-3">Get in Touch</a>
           </div>
         </div>
        </div>
 
      </div>
+    </section> 
+
+    <!-- ===================================== Gallery Section ========================================-->
+    <section id="gallery">
+      <div class="container">
+        <div class="gallery section">
+          <h2>Gallery</h2>
+
+          <div class="gallery-grid">
+            <img src="/Construction images/gallery img-7.jpg" alt="">
+            <img src="/Construction images/gallery img-12.jpg" alt="">
+            <img src="/Construction images/gallery img-9.jpg" alt="">
+            <img src="/Construction images/gallery img-10.jpg" alt="">
+            <img src="/Construction images/gallery img-11.jpg" alt="">
+            <img src="/Construction images/gallery img-30.jpg" alt="">
+          </div>
+
+          <a href="/gallery.html" class="btn-2 gallery-btn">See More</a>
+        </div>
+      </div>
     </section>
 
     <!-- ==================================== Contact Us Section ============================= -->
      <section id="contact">
       <div class="container">
         <div class="contact">
-            <!-- <img src="/Construction images/construction image-1.jpg" alt=""> -->
             <h1>Contact us</h1>
             <form action="" class="contact-form" id="contact-form">
                 <input type="text"placeholder="Name" name="name" class="contact-form-name" id="contact-name" >
-                <input type="email" name="email" placeholder="Email" class="contact-form-email">
-                <!-- <input type="text" placeholder="Subject" class="contact-form-subject"> -->
+                <input type="email" name="email" placeholder="Email" class="contact-form-email" id="contact-email">
                 <textarea id="" cols="30" rows="10" name="message" placeholder="Type your message here..." class="contact-form-message" id="message"></textarea>
-                 <p class="contact__message" id="contact-message"></p> 
-                <button class="btn-4" type="submit">Submit</button>
+                 <!-- <p class="contact__message" id="contact-message"></p>  -->
+                <button class="btn-4" onclick="SendMail()">Submit</button>
             </form>
 
         <div class="contact-location-details">
@@ -309,10 +335,18 @@
       </div>
     </footer>
 
-      <!-- =========================== Email js ========================= -->
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+      <!-- =========================== Email js =========================
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
 
     <!-- ========================== Main Js ========================= -->
     <script src="/Constructio JS/Construction.js"></script>
+
+    <script type="text/javascript">
+       (function() {
+        emailjs.init("user_SlruEr4AxyMN75xARKcvj");
+       })();
+    </script>
+
+
 </body>
 </html>

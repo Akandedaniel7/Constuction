@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Constuction CSS/style.css" />
+
+     <!-- REMIXICON -->
+     <link
+     href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+     rel="stylesheet"
+   />
+
+</head>
+<body>
+
+    <!-- =================================== Header Section =========================== -->
+    <header id="home">
+        <div class="container">
+        <nav class="nav-section header">
+            <img src="/Construction images/favicon.jpg" alt="Header">
+            <ul id="sidemenu">
+              <li>
+                <a href="/index.html" class="active">HOME</a>
+              </li>
+
+              <li>
+                <a href="#gallery">GALLERY</a>
+              </li>
+
+              <li>
+                <a href="#contact">CONTACT</a>
+              </li>
+              <i class="ri-close-fill toggle close-menu" onclick="closemenu()"></i>
+            </ul>
+            <i class="ri-menu-fill toggle open-menu" onclick="openmenu()"></i>
+          </nav>
+          </div>
+        </header>
+
+    <!-- ==================================== Gallery Section ========================== -->
+
+    <section id="gallery">
+        <div class="container">
+            <div class="gallery">
+   <h2>Gallery</h2>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="/Construction images/gallery img-1.jpg" alt="" id="FullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+        <img src="/Construction images/gallery img-1.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-2.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-3.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-7.jpg"  alt="" onclick="openFullImg(this.src)">
+         <img src="/Construction images/gallery img-12.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-9.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-10.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-11.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-30.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-8.jpg"  alt="" onclick="openFullImg(this.src)"> 
+        <img src="/Construction images/gallery img-13.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-14.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-31.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-16.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-17.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/constuction image-9.jpeg" alt="">
+        <img src="/Construction images/gallery img-15.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-24.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-21.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-22.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-20.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-29.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-25.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-26.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-27.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-28.jpg"  alt="" onclick="openFullImg(this.src)">
+        <img src="/Construction images/gallery img-23.jpg"  alt="" onclick="openFullImg(this.src)">
+    </div>
+
+    </div>
+    </div>
+    </section>
+
+     <!-- ==================================== Contact Us Section ============================= -->
+     <section id="contact">
+        <div class="container">
+          <div class="contact">
+              <h1>Contact us</h1>
+              <form action="" class="contact-form" id="contact-form">
+                  <input type="text"placeholder="Name" name="name" class="contact-form-name" id="contact-name" >
+                  <input type="email" name="email" placeholder="Email" class="contact-form-email" id="contact-email">
+                  <textarea id="" cols="30" rows="10" name="message" placeholder="Type your message here..." class="contact-form-message" id="message"></textarea>
+                   <!-- <p class="contact__message" id="contact-message"></p>  -->
+                  <button class="btn-4" onclick="SendMail()">Submit</button>
+              </form>
+  
+          <div class="contact-location-details">
+            <p>
+              Address:
+              <span
+                >34, Ondo Street by Cementry, Ebute Metta, Lagos State
+                Nigeria.</span
+              >
+            </p>
+            <p>Email: <span>Arcadestructures08@gmail.com</span></p>
+            <p>Phone: <span>+234 (814 256 3517)</span></p>
+          </div>
+  
+              <div class="contact-social-link">
+                   <a href="#">
+                    <i class="ri-facebook-fill"></i>
+                  </a>
+                   <a href="#">
+                    <i class="ri-twitter-fill"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/adisa-toheeb-p-438780143?trk=contact-info" target="_blank">
+                    <i class="ri-linkedin-fill"></i>
+                  </a>
+                  <a href="https://www.instagram.com/invites/contact/?i=sjwzi66wj9hh&utm_content=qc3dfli" target="_blank">
+                    <i class="ri-instagram-fill"></i>
+                  </a>
+              </div>
+          </div>
+  
+          </div>
+      </section> 
+
+      <!-- Back-to-top -->
+    <footer class="container" id="container">
+        <div class="back-to-top">
+          <a href="#">
+            <i class="ri-arrow-up-line"></i>
+          </a>
+        </div>
+      </footer>
+
+    <!-- ========================= MainJs ========================== -->
+    <script src="/Constructio JS/Construction.js"></script>
+    
+</body>
+</html>

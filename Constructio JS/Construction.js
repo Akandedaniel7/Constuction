@@ -25,78 +25,27 @@ function closemenu() {
 
 /* ================================ Contact Validation ================================= */
 
-// const contactForm = document.getElementById("contact-form"),
-// contactName = document.getElementById("contact-name"),
-// contactEmail = document.getElementById("contact-email"),
-// Message = document.getElementById("message"),
-// contactMessage = document.getElementById("contact-message");
-
-function sendMail(){
-    let contactValue = {
-        name: document.getElementById("contact-name").value,
-        email: document.getElementById("contact-email").value,
-        Message: document.getElementById("message").value,  
-    }
+function SendMail(){
+  var params = {
+    from_name : document.getElementById("contact-name").value,
+    email_id : document.getElementById("contact-email").value,
+    message : document.getElementById("message").value
+  }
+  emailjs.send("service_2zpsd8i", "template_dx4ccww", params).then(function (res) {
+    alert("sucess!" + res.status);
+  })
 }
 
-    const servicesID = 'service_60veax9';
-    const emailTemplate = 'template_msnt08u';
-    
-    emailjs
-    .send(servicesID, emailTemplate, contactValue)
-    .then((res) => {
-            document.getElementById("contact-name").value = "";
-            document.getElementById("contact-email").value = "";
-            document.getElementById("message").value = "";
-            console.log(res);
-            alert("Your message sent succefully");
-    })
-    .catch((err) => console.log(err));
+/* ============================================ Gallery Section ============================= */
+let FullImgBox = document.getElementById("fullImgBox");
+let FullImg = document.getElementById("FullImg");
 
-// const contactForm = document.getElementById("contact-form");
-// const contactName = document.getElementById("contactName");
-// const contactEmail = document.getElementById("contactEmail");
-// const message = document.getElementById("message"),
-//   contactMessage = document.getElementById("contactMessage");
+function openFullImg(pic){
+  FullImgBox.style.display = 'flex';
+  FullImg.src = pic;
+  
+}
 
-// const sendEmail = (e) => {
-//   e.preventDefault();
-
-//   if (
-//     contactName.value === "" &&
-//     contactEmail.value === "" &&
-//     contactMessage.value === ""
-//   ) {
-//     contactMessage.classList.remove("color-light");
-//     contactMessage.classList.add("color-dark");
-
-//     contactMessage.textContent = "Write all the input fields";
-//   } else {
-//     emailjs
-//       .sendForm(
-//         "service_2zpsd8i",
-//         "template_dx4ccww",
-//         "contact-form",
-//         "PzQEiD2iWAjgdnbjt"
-//       )
-//       .then(
-//         () => {
-//           contactMessage.classList.add("color-light");
-//           contactMessage.textContent = "Message sent";
-
-//           setTimeout(() => {
-//             contactMessage.textContent = "";
-//           }, 5000);
-//         },
-//         (error) => {
-//           alert("OOPs! SOMETHING WENT WRONG...", error);
-//         }
-//       );
-//     contactName.value = "";
-//     contactEmail.value = "";
-//     contactMessage.value = "";
-//   }
-// };
-
-// contactForm.addEventListener("submit", sendEmail);
-// >>>>>>> 3d7c3f3ec44edd544792751dd7dedf2822dbc88c
+function closeFullImg(){
+  FullImgBox.style.display = 'none';
+}

@@ -95,13 +95,19 @@ img{
     color: var(--light-green);
     font-weight: var(--lg-xx);
     transition: var(--transition);
+    padding: 7px 10px;
+    border-radius: 3px;
 }
 
-.nav-section ul li a:hover{
+a.active,a:hover{
+    background: var(--hover);
+}
+
+/* .nav-section ul li a:hover{
    background: var(--hover);
    border-radius: 2px;
-   padding: 8px 10px;
-}
+   
+}  */
 
 .toggle{
     display: none;
@@ -109,7 +115,7 @@ img{
 
 /* Header Description */
 .header-description{
-    background-color: var(--black);
+    background-color: var(--white);
     margin-top: 3rem;
     text-align: center;     
     align-items: center;
@@ -148,31 +154,31 @@ img{
 .body-description h1{
     font-size: 2.5rem;
     padding: 7px 6.5rem;
+    margin-bottom: 2rem;
 }
 
-.body-description button{
-    background-color: var(--black);
+.body-description a{
+    background-color: var(--hover);
     border-radius: 3px;
-    margin: 3rem 0px;
+    margin: 3rem 0px 2rem;
     padding: 12px 36px;
     transition: var(--transition);
-}
-
-.body-description button a {
-    color: var(--white);
     font-weight: var(--lg-ss);
     font-size: 16px;
+    color: var(--light-green);
+    border: 1px solid var(--hover)
 }
 
-.body-description button:hover{
-    background-color: var(--hover);
+.body-description a:hover{
+    background-color: transparent;
+    color: var(--hover);
 }
 
 /*==================================== About Description ================================== */
 .about-text{
     background-image: url("/Construction images/construction image-11.jpg");
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -182,35 +188,35 @@ img{
 
 .about-text-child h2{
     text-align: center;
-    background-color: var(--light-green);
-    padding-top: 6%;
+    background-color: var(--white);
+    padding-top: 4.6%;
     position: absolute;
     overflow: hidden;
     left: 35%;
     width: 32%;
     top: 0;
     margin-top: 7rem;
-    padding-bottom: 70px;
+    padding-bottom: 55px;
     font-size: 3rem;
     font-weight: var(--lg-xx);
-    font-family: sans-serif;
     text-transform: uppercase;
-    border-radius: 2px;
+    border-radius: 3px;
+    color: var(--light-green);
 }
 
 .about-story{
-    background-color: var(--black);
+    background-color: var(--white);
 }
 
 .about-story h3{
-    color: var(--white);
+    color: var(--light-green);
     padding: 19px 0px;
     font-size: 32px;
     text-align: center;
 }
 
 .about-story p{
-    color: var(--white);
+    color: var(--light-green);
     padding: 16px 16.1rem 5rem;
     letter-spacing: 1px;
     line-height: 25px;
@@ -226,7 +232,6 @@ img{
 }
 
 .about-description-flex-2 h1{
-    font-family: sans-serif;
     font-weight: var(--lg-xx);
     padding: 1px 0px 8px;
     font-size: 3.5rem;;
@@ -242,27 +247,23 @@ img{
    padding: 5px 0px;
    padding-right: 15rem;
    line-height: 22px;
-}
-
-.btn{
-    margin-top: 4rem;
+   margin-bottom: 3rem;
 }
 
 .btn{
     padding: 12px 20px;
-    background: var(--black);
+    background: var(--hover);
     transition: var(--transition);
     border-radius: 2px;
     font-size: 16px;
     font-weight: var(--lg-ss);
-}
-
-.btn a{
-    color: var(--white);
+    border: 1px solid var(--hover);
+    color: var(--light-green);
 }
 
 .btn:hover{
-    background: var(--hover);
+    background: transparent;
+    color: var(--hover);
 }
 
 /* ======================================= Service Section ================================ */
@@ -284,25 +285,25 @@ img{
 }
 
 .service-description h1{
-    font-family: sans-serif;
     font-weight: var(--lg-xx);
     font-size: 3rem;
     padding: 2px 0px 12px;
     text-transform: uppercase;
-    color: var(--white);
+    color: var(--light-green);
 }
 
 .service-description h3{
     padding: 1px 0px 12px;
     font-weight: var(--lg-ss);
-    color: var(--white);
+    color: var(--light-green);
     font-size: 19px;
 }
 
 .service-description p{
     padding-right: 45rem;
-    color: var(--white);
+    color: var(--light-green);
     line-height: 25px;
+    margin-bottom: 4.4rem;
 }
 
 .service-work{
@@ -327,29 +328,27 @@ img{
 .service-work-flex-1 h3{
     padding: 2px 0px 6px;
     font-weight: var(--lg-ss);
-    font-family: sans-serif;
 }
 
 .service-work-flex-1 h2{
     padding: 2px 0px 26px;
     font-weight: var(--lg-xx);
-    font-family: sans-serif;
 }
 
 .btn-2{
     padding: 12px 26px;
     border-radius: 3px;
-    background-color: var(--black);
+    background-color: var(--hover);
     font-size: 16px;
     transition: var(--transition);
-}
-
-.btn-2 a{
-    color: var(--white);
+    color: var(--light-green);
+    border: 1px solid var(--hover);
+    font-weight: var(--lg-xm);
 }
 
 .btn-2:hover{
-    background-color: var(--hover-2);
+    background: transparent;
+    color: var(--hover)
 }
 
 .service-work-flex-2-img1{
@@ -407,7 +406,7 @@ img{
 }
 
 .service-story{
-    background: var(--black);
+    background: var(--white);
 }
 
 .service-story-flex{
@@ -489,7 +488,7 @@ img{
 
 .service-story-flex-2 h1{
     text-transform: uppercase;
-    color: var(--white);
+    color: var(--light-green);
     font-weight: var(--lg-xx);
     font-size: 3rem;
     padding: -15px 0px 10px;
@@ -497,13 +496,13 @@ img{
 }
 
 .service-story-flex-2 h3{
-    color: var(--white);
+    color: var(--light-green);
     padding: 9px 0px 19px;
 }
 
 .btn-3 {
     padding: 12px 20px;
-    background: var(--light-green); 
+    background: var(--hover); 
     color: var(--white);
     transition: var(--transition);
     border-radius: 2px;
@@ -511,16 +510,96 @@ img{
     font-weight: var(--lg-ss);
     margin-top: 19px;
     border: 1px solid var(--light-green);
-}
-
-.btn-3 a{
-   color: var(--white);
+    color: var(--light-green);
 }
 
  .btn-3:hover{
     background: transparent;
+    color: var(--hover);
 } 
 
+/* ========================================== Gallery section ========================================= */
+.gallery{
+    padding: 13px 0 4rem;
+}
+.gallery h2{
+  color: var(--white);
+  padding: 11px 0px 1px;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: var(--lg-xx);
+}
+
+.gallery .gallery-btn{
+    margin-left: 50%;
+    margin-top: 5rem;
+}
+
+.gallery-grid{
+    width: 80%; 
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.gallery-grid img{
+   width: 100%;
+   opacity: 0.5;
+}
+
+.gallery-grid img:hover{
+    opacity: 3;
+}
+
+.img-gallery{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    
+}
+
+.img-gallery img{
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32 rgba(68, 77, 136, 0.2);
+}
+
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    z-index: 100;
+}
+
+.full-img img{
+    width: 90%;
+    max-width: 500px;
+}
+
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: var(--lg-xx);
+}
 
 /* ================================================ Contact Us section ========================== */
 .contact{
@@ -650,7 +729,7 @@ textarea{
 
 /* ======================= Back-to-top ======================== */
 .back-to-top{
-    background: linear-gradient(var(--light-green), var(--black));
+     background: linear-gradient(var(--light-green), var(--black));
     position: fixed;
     bottom: 16px;
     right: 29px;
@@ -665,18 +744,18 @@ textarea{
     display: flex;
     pointer-events: none;
     cursor: pointer;
-    opacity: 0;
+     opacity: 0; 
     transition: var(--transition);
 }
 
 .back-to-top a {
-    color: var(--white)
+      color: var(--white); 
 }
 
 .back-to-top.active{
     bottom: 32px;
     pointer-events: auto;
-    opacity: 1;
+    opacity: 1; 
 }
 
 /* =============== Break Points ============ */
