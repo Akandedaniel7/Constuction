@@ -966,25 +966,25 @@ textarea{
 
  @media (orientation: portrait) and (min-width: 900px) and (max-width: 1200px){
     .about-text{
-        height: 36vh;
+        height: 30vh;
     }
 
     .service{
-        height: 36vh;
+        height: 30vh;
     }
 
     .service-work-flex-1{
-        height: 39vh;
+        height: 30vh;
     }
 }
 
 @media (orientation: landscape) and (min-width: 900px) and (max-width: 1200px){
     .about-text{
-        height: 45vh;
+        height: 40vh;
     }
 
     .service{
-        height: 55vh;
+        height: 50vh;
     }
 
     .service-work-flex-1{
