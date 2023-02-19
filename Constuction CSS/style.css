@@ -100,7 +100,7 @@ img{
     border-radius: 3px;
 }
 
-a.active,a:hover{
+a:hover,a.active{
     background: var(--hover);
 }
 
@@ -1411,11 +1411,12 @@ textarea{
         padding: 0 0;
         border-radius: 3px;
       }
-      a.active, a:hover {
+
+      a:hover,a.active{
         background: none;
-        /* text-decoration: underline; */
-        color: var(--hover);
-      }
+        color: blue;
+
+    }
 
       .about-description-flex {
         display: block;
@@ -1538,6 +1539,21 @@ textarea{
 
       .about-story p {
         padding: 16px 1rem 5rem;
+      }
+}
+
+@media (orientation: portrait) and (min-width: 900px) and (max-width: 1200px){
+    .service {
+        height: 47vh;
+      }
+
+      .about-text {
+        height: 32vh;
+        padding-top: 4%;
+      }
+
+      .service-work-flex-1 {
+        height: 31.8vh;
       }
 }
 
