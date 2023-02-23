@@ -1038,4 +1038,12 @@ textarea{
 
 }
 
-@media all and (max-width: )
+@media all and (max-width: 380px){
+  .about-story-flex-2 p {
+    padding-right: 0;
+  }
+
+  .about-description-flex-2 p {
+    padding-right: 0;
+  }
+}
