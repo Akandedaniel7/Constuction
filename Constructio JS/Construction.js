@@ -1,5 +1,26 @@
-/* ================================= Section Background-image Changing =========================== */
-let images = ["url("];
+/* ================================= Navbar Active =========================== */
+
+const list = document.querySelector(' nav .nav-container ul');
+const links = list.querySelectorAll('a');
+
+
+list.addEventListener('click', handleClick);
+
+
+function handleClick(e) {
+  if (e.target.matches('a')) {
+    links.forEach(link => link.classList.remove('active'));
+    e.target.classList.add('active');
+  }
+}
+
+/* ================================ Typed JS ============================== */
+const typed = new Typed('.auto-type', {
+  strings: ['International Limited', 'More Text', 'More Text'],
+  typeSpeed: 150,
+  backSpeed: 150,
+  loop: true
+}) 
 
 /* ================================ Back-to-top ============================== */
 const backToTop = document.querySelector(".back-to-top");
@@ -25,16 +46,16 @@ function closemenu() {
 
 /* ================================ Contact Validation ================================= */
 
-function SendMail(){
-  var params = {
-    from_name : document.getElementById("contact-name").value,
-    email_id : document.getElementById("contact-email").value,
-    message : document.getElementById("message").value
-  }
-  emailjs.send("service_2zpsd8i", "template_dx4ccww", params).then(function (res) {
-    alert("sucess!" + res.status);
-  })
-}
+// function SendMail(){
+//   var params = {
+//     from_name : document.getElementById("contact-name").value,
+//     email_id : document.getElementById("contact-email").value,
+//     message : document.getElementById("message").value
+//   }
+//   emailjs.send("service_2zpsd8i", "template_dx4ccww", params).then(function (res) {
+//     alert("sucess!" + res.status);
+//   })
+// }
 
 /* ============================================ Gallery Section ============================= */
 let FullImgBox = document.getElementById("fullImgBox");

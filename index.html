@@ -29,10 +29,11 @@
    <header id="home">
     <div class="container">
     <nav class="nav-section header">
-        <img src="/Construction images/favicon.jpg" alt="Header">
+      <div class="nav-container">
+        <img src="/Construction images/favicon-removebg-preview.png" alt="Header">
         <ul id="sidemenu">
 
-          <li>
+          <li >
             <a href="#home" class="active">HOME</a>
           </li>
 
@@ -49,30 +50,40 @@
           </li>
           
           <li>
-            <a href="#contact">CONTACT</a>
+            <a href="#contact" class="blinking-Text">CONTACT</a>
           </li>
           <i class="ri-close-fill toggle close-menu" onclick="closemenu()"></i>
         </ul>
         <i class="ri-menu-fill toggle open-menu" onclick="openmenu()"></i>
+      </div>
       </nav>
       </div>
     </header>
 
     <!-- Header Description -->
     <section class="container">
-        <div class="header-description">
-            <img src="/Construction images/header-image2.jpg" alt="Personal Image">
-            <h3>Arcrade Stuctures International Limited</h3>
+        <div class="header-description Type">
+            <!-- <img src="/Construction images/header-image2.jpg" alt="Personal Image"> -->
+            <h3>Arcrade Stuctures <span class="auto-type"></span></h3>
         </div>       
     </section> 
 
     <!-- Body Description -->
 
     <section class="container body-description">
-        <img src="/Construction images/building.jpg" alt="Building">
-        <h3><i>Your reliable factor of safety</i></h3>
+      <div class="body-decription-flex">
+        <div class="body-description-flex-1">
+             <img src="/Construction images/building.jpg" alt="Building">
+        </div>
+
+        <div class="body-description-flex-2">
+        <h3>Your reliable factor of safety</h3>
         <h1>Architectural | Structural | General Civil Works</h1>
         <a href="#contact">Learn More</a>
+        </div>
+      </div>
+        
+       
     </section> 
 
     <!-- =================================== About Section ====================================== -->
@@ -80,13 +91,17 @@
       <div class="container about-section">
       <div class="container about-section">
         <div class="about-text">
-            <div class="about-text-child">
               <h2>About us</h2>  
-            </div>
         </div>
 
-      <div class="about-story">
-        <h3><i>Our Story</i></h3>
+       <div class="about-story">
+        <div class="about-story-flex">
+          <div class="about-story-flex-1">
+           <img src="/Construction images/construction image-3.jpeg" alt="">
+          </div>
+
+          <div class="about-story-flex-2">
+            <h3>Our Story</h3>
         <p>
           Acrade Structures access detailed pre-design project information
           before your competition with the earliest, verified advance-notice
@@ -94,7 +109,12 @@
           sector/government projects serving architects, engineers and
           construction management professionals.
         </p>
-      </div>
+       
+
+          </div>
+        </div>
+        
+      </div> 
 
       <div class="about-description-flex">
         <div class="about-description-flex-1">
@@ -106,7 +126,7 @@
 
            <div class="about-description-flex-2">
            <h1>OUR QUALITY STANDARDS</h1>
-           <h3><i>What Makes the Cut</i></h3>
+            <h3>What makes the cut</h3>
            <p>When you want the best outcomes, you need the best content. As an architect or design professional, to truly ensure that
              your design is realized, it is essential that you have access to CAD details, BIM objects, catalogues, galleries and specifications.
               Bringing manufacturer-specific content into your designs, without having to change applications or search the web is even better. </p>
@@ -124,8 +144,8 @@
         <div class="service">
 
             <div class="service-description">
-            <h1>our service</h1>
-            <h3><i>What We Can Do for you</i></h3>
+            <h2>our service</h2>
+            <h3>What we can do for you</h3>
             <p>Our Services includes Building Constuction, Constuction Supervision, Project Planning and Management Stuctural Design, Architectural
               Design, Foundation Constuction and Problems, Levelling and Surveying, Civil Engineering works, Prepartion of Engineering works, Preparation
               of Engineering Bills, Renovations Works, CAD and BIM trainings etc.
@@ -138,7 +158,7 @@
         <div class="service-flex">
           <div class="service-work-flex-1">
             <h2>Architectural Design</h2>
-            <h3><i>Find and Win Design Work With Acrade</i></h3>
+            <h3>Find and Win Design Work With Acrade</h3>
             <a href="#contact" class="btn-2">Get In Touch</a>
           </div>
 
@@ -154,7 +174,7 @@
         <div class="service-flex">
           <div class="service-work-flex-1">
             <h2>Structural Design</h2>
-            <h3><i>Sweets makes it easy</i></h3>
+            <h3>Sweets makes it easy</h3>
             <a href="#contact" class="btn-2">Get In Touch</a>
           </div>
 
@@ -170,7 +190,7 @@
         <div class="service-flex">
           <div class="service-work-flex-1">
             <h2>CAD Tranning</h2>
-            <h3><i>Plan to grow with confidence</i></h3>
+            <h3>Plan to grow with confidence</h3>
             <a href="#contact" class="btn-2">Get In Touch</a>
           </div>
 
@@ -186,7 +206,7 @@
         <div class="service-flex">
           <div class="service-work-flex-1">
             <h2>Project Supervision</h2>
-            <h3><i>Plan to grow with confidence</i></h3>
+            <h3>Plan to grow with confidence</h3>
             <a href="#contact" class="btn-2">Get In Touch</a>
           </div>
 
@@ -200,9 +220,9 @@
         </div>
 
         <div class="service-flex">
-          <div class="service-work-flex-1-child-5">
+          <div class="service-work-flex-1">
             <h2>Engineering Bills</h2>
-            <h3><i> to grow with confidence</i></h3>
+            <h3> to grow with confidence</h3>
             <a href="#contact" class="btn-2">Get In Touch</a>
           </div>
 
@@ -217,11 +237,19 @@
       </div>
 
       <div class="service-openHours">
-        <img src="/Construction images/construction image-12.jpg" alt="" />
+        <div class="openHours-flex">
+
+          <div class="openHours-flex-1">
+       <img src="/Construction images/construction image-12.jpg" alt="" />
+        </div>
+
+        <div class="openHours-flex-2">
         <h2>opening hours</h2>
         <p>Mon - Fri: 7am - 10pm</p>
         <p>Saturday: 8am - 10pm</p>
         <p>Sunday: Closed</p>
+        </div>
+      </div>
       </div>
 
       <div class="service-story">
@@ -253,7 +281,7 @@
 
           <div class="service-story-flex-2">
             <h1>Our Story</h1>
-            <h3><i>An Architect You Can Trust</i></h3>
+            <h3><i>An Architect You Can Trust</h3>
             <a href="#contact"class="btn-3">Get in Touch</a>
           </div>
         </div>
@@ -286,7 +314,7 @@
      <section id="contact">
       <div class="container">
         <div class="contact">
-            <h1>Contact us</h1>
+            <h2>Contact us</h2>
             <form action="" class="contact-form" id="contact-form">
                 <input type="text"placeholder="Name" name="name" class="contact-form-name" id="contact-name" >
                 <input type="email" name="email" placeholder="Email" class="contact-form-email" id="contact-email">
@@ -333,6 +361,9 @@
         </a>
       </div>
     </footer>
+
+    <!-- ================================ Typed JS ============================== -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
       <!-- =========================== Email js =========================
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
