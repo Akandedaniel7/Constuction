@@ -20,27 +20,30 @@
 
     <!-- =================================== Header Section =========================== -->
     <header id="home">
-        <div class="container">
-        <nav class="nav-section header">
-            <img src="/Construction images/favicon.jpg" alt="Header">
-            <ul id="sidemenu">
-              <li>
-                <a href="/index.html" class="active">HOME</a>
-              </li>
+      <div class="container">
+      <nav class="nav-section header">
+        <div class="nav-container">
+          <img src="/Construction images/favicon-removebg-preview.png" alt="Header">
+          <ul id="sidemenu">
+  
+            <li >
+              <a href="#home" class="active">HOME</a>
+            </li>
 
-              <li>
-                <a href="#gallery">GALLERY</a>
-              </li>
-
-              <li>
-                <a href="#contact">CONTACT</a>
-              </li>
-              <i class="ri-close-fill toggle close-menu" onclick="closemenu()"></i>
-            </ul>
-            <i class="ri-menu-fill toggle open-menu" onclick="openmenu()"></i>
-          </nav>
-          </div>
-        </header>
+            <li>
+              <a href="#gallery">GALLERY</a>
+            </li>
+            
+            <li>
+              <a href="#contact" class="blinking-Text">CONTACT</a>
+            </li>
+            <i class="ri-close-fill toggle close-menu" onclick="closemenu()"></i>
+          </ul>
+          <i class="ri-menu-fill toggle open-menu" onclick="openmenu()"></i>
+        </div>
+        </nav>
+        </div>
+      </header>
 
     <!-- ==================================== Gallery Section ========================== -->
 
@@ -90,50 +93,49 @@
 
      <!-- ==================================== Contact Us Section ============================= -->
      <section id="contact">
-        <div class="container">
-          <div class="contact">
-              <h1>Contact us</h1>
-              <form action="" class="contact-form" id="contact-form">
-                  <input type="text"placeholder="Name" name="name" class="contact-form-name" id="contact-name" >
-                  <input type="email" name="email" placeholder="Email" class="contact-form-email" id="contact-email">
-                  <textarea id="" cols="30" rows="10" name="message" placeholder="Type your message here..." class="contact-form-message" id="message"></textarea>
-                   <!-- <p class="contact__message" id="contact-message"></p>  -->
-                  <button class="btn-4" onclick="SendMail()">Submit</button>
-              </form>
-  
-          <div class="contact-location-details">
-            <p>
-              Address:
-              <span
-                >34, Ondo Street by Cementry, Ebute Metta, Lagos State
-                Nigeria.</span
-              >
-            </p>
-            <p>Email: <span>Arcadestructures08@gmail.com</span></p>
-            <p>Phone: <span>+234 (814 256 3517)</span></p>
-          </div>
-  
-              <div class="contact-social-link">
-                   <a href="#">
-                    <i class="ri-facebook-fill"></i>
-                  </a>
-                   <a href="#">
-                    <i class="ri-twitter-fill"></i>
-                  </a>
-                  <a href="https://www.linkedin.com/in/adisa-toheeb-p-438780143?trk=contact-info" target="_blank">
-                    <i class="ri-linkedin-fill"></i>
-                  </a>
-                  <a href="https://www.instagram.com/invites/contact/?i=sjwzi66wj9hh&utm_content=qc3dfli" target="_blank">
-                    <i class="ri-instagram-fill"></i>
-                  </a>
-              </div>
-          </div>
-  
-          </div>
-      </section> 
+      <div class="container">
+        <div class="contact">
+            <h2>Contact us</h2>
+            <form action="" class="contact-form" id="contact-form" data-aos="fade-up" data-aos-duration="1000">
+                <input type="text"placeholder="Name" name="name" class="contact-form-name" id="contact-name" >
+                <input type="email" name="email" placeholder="Email" class="contact-form-email" id="contact-email">
+                <textarea id="" cols="30" rows="10" name="message" placeholder="Type your message here..." class="contact-form-message" id="message"></textarea>
+                <button class="btn-4" onclick="SendMail()">Submit</button>
+            </form>
+
+        <div class="contact-location-details" data-aos="fade-up" data-aos-duration="1000">
+          <p>
+            Address:
+            <span
+              >34, Ondo Street by Cementry, Ebute Metta, Lagos State
+              Nigeria.</span
+            >
+          </p>
+          <p>Email: <span>Arcadestructures08@gmail.com</span></p>
+          <p>Phone: <span>+234 (814 256 3517)</span></p>
+        </div>
+
+            <div class="contact-social-link">
+                 <a href="#">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                 <a href="#">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/adisa-toheeb-p-438780143?trk=contact-info" target="_blank">
+                  <i class="ri-linkedin-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/invites/contact/?i=sjwzi66wj9hh&utm_content=qc3dfli" target="_blank">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+
+        </div>
+    </section> 
 
       <!-- Back-to-top -->
-    <footer class="container" id="container">
+      <footer class="container" id="container">
         <div class="back-to-top">
           <a href="#">
             <i class="ri-arrow-up-line"></i>
@@ -141,8 +143,16 @@
         </div>
       </footer>
 
+      <!-- ==================== Animation Scroll JS ========================== -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- ========================= MainJs ========================== -->
     <script src="/Constructio JS/Construction.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
     
 </body>
 </html>
