@@ -41,21 +41,10 @@ function openmenu() {
 }
 
 function closemenu() {
-  sidemenu.style.right = '-200px'
+  sidemenu.style.right = '-200px';
 }
 
 /* ================================ Contact Validation ================================= */
-
-// function SendMail(){
-//   var params = {
-//     from_name : document.getElementById("contact-name").value,
-//     email_id : document.getElementById("contact-email").value,
-//     message : document.getElementById("message").value
-//   }
-//   emailjs.send("service_2zpsd8i", "template_dx4ccww", params).then(function (res) {
-//     alert("sucess!" + res.status);
-//   })
-// }
 
 /* ============================================ Gallery Section ============================= */
 let FullImgBox = document.getElementById("fullImgBox");
