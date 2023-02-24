@@ -81,6 +81,10 @@ section{
     padding: 29px 60px;
 }
 
+.container{
+    overflow: hidden;
+}
+
 /* ================================================== Header Section ======================================= */
 .header{
     padding: 10px 2rem;
@@ -935,6 +939,9 @@ textarea{
 }
 
 @media all and (max-width: 530px){
+    section{
+        padding: 29px 40px;
+    }
   p{
     font-size: 13px;
   }
@@ -981,5 +988,9 @@ textarea{
 
   .about-description-flex-2 p {
     padding-right: 0;
+  }
+
+  .btn-4{
+    padding: 17px 2rem;
   }
 }
