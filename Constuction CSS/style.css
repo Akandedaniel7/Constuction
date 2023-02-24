@@ -113,20 +113,6 @@ section{
     border-radius: 3px;
 }
 
- /* .nav-link.active{
-    background-color: red;
-}  */
-
-/* a:hover,a.active{
-    background: var(--hover);
-} */
-
-/* .nav-section ul li a:hover{
-   background: var(--hover);
-   border-radius: 2px;
-   
-}  */
-
 .active {
     background: var(--gold);
   }
@@ -157,13 +143,6 @@ section{
     align-items: center;
     padding: 32px 0px;
 }
-
-/* .header-description img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-} */
 
 .header-description h3{
     color: var(--light-gray);
@@ -365,13 +344,6 @@ section{
     flex-direction: row-reverse;
 }
 
-.service-work-flex-1{
-    /* background-color: var(--light-green);
-    height: 55.8vh;
-    width: 39%;
-    padding: 6rem 3rem 2rem; */
-}
-
 .service-work-flex-1 h2{
     font-weight: var(--lg-ss);
     margin-bottom: 19px;
@@ -454,10 +426,6 @@ section{
 
 .about-products-section{
     background-color: var(--black);
-}
-
-.service-story{
-    /* background: var(--white); */
 }
 
 .service-story-flex{
@@ -570,9 +538,6 @@ section{
 } 
 
 /* ========================================== Gallery section ========================================= */
-.gallery{
-    /* padding: 13px 0 4rem; */
-}
 .gallery h2{
   color: var(--light-gray);
   font-weight: var(--lg-ss);
@@ -828,7 +793,7 @@ textarea{
 
 @media all and (min-width: 750px) and (max-width: 1220px){
     .container{
-        max-width: 980px;
+        max-width: 1200px;
     }
 
   }

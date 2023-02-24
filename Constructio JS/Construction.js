@@ -16,7 +16,7 @@ function handleClick(e) {
 
 /* ================================ Typed JS ============================== */
 const typed = new Typed('.auto-type', {
-  strings: ['International Limited', 'More Text', 'More Text'],
+  strings: ['International Limited', 'The New Generation', 'A Place For You'],
   typeSpeed: 150,
   backSpeed: 150,
   loop: true
