@@ -139,6 +139,8 @@ section{
     100%	{ color: var(--light-gray);}
 }
 
+
+
 /* Header Description */
 .header-description{
     /* background-color: var(--white); */
@@ -149,11 +151,15 @@ section{
 }
 
 .header-description h3{
-    color: var(--light-gray);
+    color: var(--gold);
     text-transform: uppercase;
     font-weight: var(--lg-ss);
     padding: 10px 0px;
     font-size: 38px;
+}
+
+.auto-type{
+    color: var(--light-gray)
 }
 
 /* ======================= Body Description =============== */
@@ -338,16 +344,17 @@ section{
     margin-bottom: 4.4rem;
 }
 
-.service-flex{
-    display: flex;
+
+ .service-flex{
+display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2rem 0px;
-    position: relative;
-    /* padding: 2rem 30px; */
+    position: relative; 
+    padding: 2rem 30px;
     flex-direction: row-reverse;
-}
 
+ }
 .service-work-flex-1 h2{
     font-weight: var(--lg-ss);
     margin-bottom: 19px;
@@ -657,11 +664,11 @@ section{
 }
 
 .contact-form-name{
-    width: 49%;
+    width:100%;
 }
 
 .contact-form-email{
-    width: 49%;
+    width: 100%;
 }
 
 .contact-form-subject{
@@ -681,11 +688,11 @@ section{
 }
 
 .color-light{
-    opacity: 0;
+    
 }
 
 .color-dark{
-    opacity: 0.4;
+    
 }
 
 input,
@@ -756,6 +763,11 @@ textarea{
 .contact-social-link i:hover{
     transform: scale(1.3256px);
     color: var(--gold);
+}
+
+.contact__message{
+    text-align: center;
+    color: var(--light-gray)
 }
 
 
@@ -994,3 +1006,89 @@ textarea{
     padding: 17px 2rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .contact__list{
+	margin-bottom: 3.35rem;
+}
+
+.contact__list dt{
+	float: left;
+	font-weight: var(--bold);
+	text-transform: uppercase;
+}
+
+.contact__list dd{
+	padding-left: 6.25em;
+	margin-bottom: 0.94em;
+}
+
+.contact__socials li{
+	margin-bottom: 0.75rem;
+}
+
+.contact__socials-link{
+	font-family: var(--roboto-font);
+}
+
+.contact__form{
+	position: relative;
+}
+
+.contact__form-title{
+	margin-bottom: 1.25em;
+}
+
+.contact__input-div{
+	margin-bottom: 0.94em;
+}
+
+.color-light{
+	color: blue;
+}
+
+.color-dark{
+	color: red
+}
+
+.contact__input{
+	width: 100%;
+	border: 1px solid var(--border-color);
+	border-radius: 3px;
+	padding: 0.625rem;
+}
+
+.textarea{
+	height: 7.2rem;
+	resize: none;
+}
+
+.contact__input:focus{
+	box-shadow: inset 0 0 5px #fff;
+}
+
+.contact__message{
+	position: absolute;
+	bottom: 35%;
+	left: 0;
+	font-family: var(--mono-font);
+	color: #fff;
+}
+
+.contact__button{
+	margin-top: 1.875rem;
+	width: 100%;
+	box-shadow: 0 1px 29px rgb(0 0 0 / 40%)
+} */
