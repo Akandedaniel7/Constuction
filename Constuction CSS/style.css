@@ -887,6 +887,26 @@ textarea{
       margin-left: 13rem;
     }
 
+    .about-story-flex-2{
+        padding-top: 25px;
+    }
+
+    .about-description-flex-2{
+        padding-top: 25px;
+    }
+
+    .service-work-flex-1{
+        padding-top: 25px;
+    }
+
+    .openHours-flex-2{
+        padding-top: 25px;
+    }
+
+    .service-story-flex-2{
+        padding-top: 25px;
+    }
+
 @media all and (max-width: 740px){
   .toggle{
     display: block;
@@ -965,9 +985,11 @@ textarea{
     section{
         padding: 29px 30px;
     }
+
   p{
     font-size: 13px;
   }
+  
   .btn-4 {
     margin-left: 1rem;
   }
