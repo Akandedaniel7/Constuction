@@ -1028,6 +1028,11 @@ textarea{
     width: 100%;
   }
 
+  .img-gallery{
+    width: 100%;
+    grid-gap: 70px;
+   }
+
 }
 
 @media all and (max-width: 380px){

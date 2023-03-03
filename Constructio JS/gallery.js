@@ -13,7 +13,7 @@ function closeFullImg(){
 }
 
 /* ============ SIDE MENU =========== */
-const sidemenu = document.getElementById("sidemenu");
+let sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
   sidemenu.style.right = '0';
