@@ -82,7 +82,7 @@ section{
 }
 
 .container{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /* ================================================== Header Section ======================================= */
@@ -117,7 +117,7 @@ section{
     border-radius: 3px;
 }
 
-.active {
+.actives {
     background: var(--gold);
   }
 
@@ -692,7 +692,7 @@ display: flex;
 }
 
 .color-dark{
-    
+ 
 }
 
 input,
@@ -920,7 +920,7 @@ textarea{
     background: none;
   }
 
-   .active{
+   .actives{
     background: none;
     position: relative;
    }
