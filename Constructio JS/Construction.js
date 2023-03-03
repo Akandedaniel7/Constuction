@@ -1,5 +1,4 @@
-/* ================================= Navbar Active =========================== */
- const list = document.querySelector(' nav .nav-container ul');
+ let list = document.querySelector('nav .nav-container ul');
  const links = list.querySelectorAll('a');
 
 
