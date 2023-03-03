@@ -16,7 +16,7 @@
 
 /* ================================ Typed JS ============================== */
  const typed = new Typed('.auto-type', {
-   strings: ['International Limited', 'The New Generation', 'A Place For You'],
+   strings: [' intl limited', 'The New Generation', 'A Place For You'],
    typeSpeed: 150,
   backSpeed: 150,
   loop: true
