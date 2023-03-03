@@ -624,7 +624,7 @@ section{
 }
 
 .full-img img{
-    width: 90%;
+    width: 100%;
     max-width: 500px;
 }
 
@@ -633,9 +633,9 @@ section{
     top: 5%;
     right: 5%;
     font-size: 30px;
-    color: var(--white);
+    color: var(--gold);
     cursor: pointer;
-    font-weight: var(--lg-xx);
+    font-weight: var(--lg-sm);
 }
 
 /* ================================================ Contact Us section ========================== */

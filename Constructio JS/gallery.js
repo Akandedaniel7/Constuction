@@ -13,12 +13,23 @@ function closeFullImg(){
 }
 
 /* ============ SIDE MENU =========== */
-let sidemenu = document.getElementById("sidemenu");
+const sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
   sidemenu.style.right = '0';
 }
 
 function closemenu() {
-  sidemenu.style.right = '-200px';
+  sidemenu.style.right = '-100%';
+};
+
+
+
+const navLink  = document.querySelectorAll('.nav-link');
+
+function linkAction(){
+	const sidemenu = document.getElementById('sidemenu');
+     sidemenu.style.right = '-100%';
 }
+
+navLink.forEach((n) => n.addEventListener('click', linkAction));
