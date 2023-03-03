@@ -81,40 +81,9 @@ window.addEventListener("scroll", scrollHeader);
 
  contactMe.addEventListener('submit', sendEmail);
 
- /* ========= STYLE SWITCHER ============== */
- const styleSwitcherToggle = document.querySelector('.style__switcher-toggle'),
-    styleSwitcher = document.querySelector('.style__switcher');
-
-styleSwitcherToggle.addEventListener('click', () =>{
-	styleSwitcher.classList.toggle('open');
-})
-
-// Hide Switcher On Scroll
-window.addEventListener('scroll', () =>{
-	if (styleSwitcher.classList.contains('open')) {
-		styleSwitcher.classList.remove('open');
-	}
-})
-
-const alternateStyles = document.querySelectorAll('.alternate-style');
-
-function setActiveStyle(color){
-	alternateStyles.forEach((style) => {
-     if (color === style.getAttribute('title')) {
-     	style.removeAttribute('disabled');
-     } else{
-     	style.setAttribute('disabled', 'true')
-     }
-	});
-}
 
 
 
 
-// service_chjjpwm
 
-// template_xytd55m
 
-//#contact-form
-
-// NaW_rbPGSaRfoK4kr
