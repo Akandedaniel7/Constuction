@@ -82,7 +82,7 @@ section{
 }
 
 .container{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* ================================================== Header Section ======================================= */
