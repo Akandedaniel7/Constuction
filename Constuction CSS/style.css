@@ -735,7 +735,7 @@ textarea{
     font-size: 16px;
     color: var(--pure-white);
     border: 1px solid var(--gold);
-    margin-left: 26rem; 
+    margin-left: 0; 
 }
 
 .btn-4:hover{
