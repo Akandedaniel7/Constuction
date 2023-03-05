@@ -13,12 +13,12 @@
  };
 
 /* ================================ Typed JS ============================== */
- const typed = new Typed('.auto-type', {
-   strings: [' intl limited', 'The New Generation', 'A Place For You'],
-   typeSpeed: 150,
-  backSpeed: 150,
-  loop: true
- });
+//  const typed = new Typed('.auto-type', {
+//    strings: [' intl limited', 'The New Generation', 'A Place For You'],
+//    typeSpeed: 150,
+//   backSpeed: 150,
+//   loop: true
+//  });
 
 /* ================================ Back-to-top ============================== */
 const backToTop = document.querySelector(".back-to-top");

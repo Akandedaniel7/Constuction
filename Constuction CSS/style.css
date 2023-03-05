@@ -552,6 +552,7 @@ section{
 } 
 
 /* ========================================== Gallery section ========================================= */
+
 .gallery h2{
   color: var(--light-gray);
   font-weight: var(--lg-ss);
@@ -912,6 +913,10 @@ textarea{
     }
 
     .service-story-flex-2{
+        padding-top: 25px;
+    }
+
+    .body-description-flex-2{
         padding-top: 25px;
     }
 }
