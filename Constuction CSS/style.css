@@ -643,6 +643,26 @@ section{
     font-weight: var(--lg-sm);
 }
 
+
+.gallery-description-img-text h2{
+    color: var(--light-gray);
+    font-weight: var(--lg-ss);
+    font-size: 2.7rem;
+    position: relative;
+    text-transform: capitalize;
+    margin-bottom: 2.5rem;
+}
+  
+.gallery-description-img-text h2::after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 5px;
+    top: 59px;
+    left: 1px;
+    background-color: var(--yellow);
+}
+
 /* ================================================ Contact Us section ========================== */
 .contact h2{
   color: var(--light-gray);
