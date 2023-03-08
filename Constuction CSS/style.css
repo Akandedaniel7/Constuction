@@ -86,6 +86,11 @@ section{
     padding: 10px 2rem;
     /* background-color: var(--white); */
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    /* position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    overflow: hidden; */
 }
 
 .nav-container{
