@@ -84,13 +84,13 @@ section{
 /* ================================================== Header Section ======================================= */
 .header{
     padding: 10px 2rem;
-    /* background-color: var(--white); */
+    background-color: var(--pure-white);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    /* position: fixed;
+    position: fixed;
     top: 0;
     z-index: 100;
     width: 100%;
-    overflow: hidden; */
+    overflow: hidden;
 }
 
 .nav-container{
@@ -120,7 +120,7 @@ section{
 
 .actives {
     background: var(--gold);
-  }
+}
 
 .nav-container ul li a:hover{
     background: var(--gold);
@@ -132,6 +132,7 @@ section{
 .blinking-Text{
     animation: blinkingText 2s infinite;
 }
+
 @keyframes blinkingText{
     0%		{ color: var(--light-gray);}
     25%		{ color: var(--gold);}
