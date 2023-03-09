@@ -371,7 +371,7 @@ section{
     color: var(--light-gray)
 }
 
-.service-work-flex-1 h3{
+.service-work-flex-1 p{
     padding: 2px 0px 26px;
     font-weight: var(--lg-xm);
     margin-bottom: 16px;
