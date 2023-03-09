@@ -77,8 +77,12 @@ img{
     width: 100%;
 }
 
-section{
-    padding: 29px 60px;
+/* section{
+    padding: 29px 60px; 
+} */
+
+.span{
+    color: var(--gold)
 }
 
 /* ================================================== Header Section ======================================= */
@@ -373,7 +377,7 @@ section{
 
 .service-work-flex-1 p{
     padding: 2px 0px 26px;
-    font-weight: var(--lg-xm);
+    font-weight: var(--lg-sm);
     margin-bottom: 16px;
     color: var(--light-gray);
     font-size: 18px;
@@ -888,6 +892,14 @@ textarea{
     .service-work-flex-1{
       margin-bottom: 39px;
     }
+
+    .service-work-flex-1 p {
+        padding: 2px 0px 26px;
+        font-weight: var(--lg-xm);
+        margin-bottom: 16px;
+        color: var(--light-gray);
+        font-size: 18px;
+      }
   
     .service-flex {
       flex-direction: column-reverse;
@@ -1021,9 +1033,9 @@ textarea{
 }
 
 @media all and (max-width: 530px){
-    section{
+    /* section{
         padding: 29px 30px;
-    }
+    } */
 
   p{
     font-size: 13px;
