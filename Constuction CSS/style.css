@@ -77,9 +77,9 @@ img{
     width: 100%;
 }
 
-/* section{
+section{
     padding: 29px 60px; 
-} */
+}
 
 .span{
     color: var(--gold)
@@ -1033,9 +1033,9 @@ textarea{
 }
 
 @media all and (max-width: 530px){
-    /* section{
+    section{
         padding: 29px 30px;
-    } */
+    }
 
   p{
     font-size: 13px;
