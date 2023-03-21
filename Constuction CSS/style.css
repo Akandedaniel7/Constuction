@@ -79,7 +79,7 @@ img {
 }
 
 .section {
-  padding: 29px 90px;
+  padding: 29px 30px;
 }
 
 .span {
@@ -91,7 +91,6 @@ img {
   padding: 10px 2rem;
   background-color: var(--pure-white);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  /* position: fixed; */
   top: 0;
   z-index: 100;
   width: 100%;
@@ -157,6 +156,87 @@ img {
   }
 }
 
+/* ====================== Home Details =========================== */
+.home-details-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.3rem;
+  margin: 2rem 0;
+}
+
+.home-details-flex-i {
+  flex-basis: 100%;
+}
+
+.home-details-flex-i p a {
+  color: var(--light-gray);
+  font-size: 1.1rem;
+  font-weight: var(--lg-sm);
+  transition: var(--transition);
+}
+
+.home-details-flex-i p a:hover {
+  color: var(--gold);
+}
+
+.home-details-flex-i h2 {
+  padding-right: 1.14rem;
+  color: var(--light-gray);
+  font-size: 2.7rem;
+  font-weight: var(--lg-xx);
+}
+
+.home-details-flex-i-span {
+  color: var(--gold);
+}
+
+.home-details-flex-ii p {
+  color: var(--light-gray);
+}
+
+/* ====================== Home Details Links =========================== */
+.home-details-links-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.links-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--gold);
+  padding: 19px 70px;
+  border-radius: 5px;
+}
+
+.home-details-links-flex-i-child-ii h3,
+.home-details-links-flex-ii-child-ii h3,
+.home-details-links-flex-iii-child-ii h3 {
+  color: var(--light-gray);
+  font-weight: var(--lg-xm);
+  font-size: 1.4rem;
+}
+
+.home-details-links-flex-i-child-ii p a,
+.home-details-links-flex-ii-child-ii p a,
+.home-details-links-flex-iii-child-ii p a {
+  color: var(--light-gray);
+  font-size: 1.1rem;
+  font-weight: var(--lg-sm);
+  transition: var(--transition);
+}
+
+.home-details-links-flex-i-child-ii p a:hover,
+.home-details-links-flex-ii-child-ii p a:hover,
+.home-details-links-flex-iii-child-ii p a:hover {
+  color: var(--hover);
+}
+
 /* Header Description */
 .header-description {
   /* background-color: var(--white); */
@@ -182,7 +262,7 @@ img {
 .header-background {
   width: 100%;
   height: 80vh;
-  animation: animate 12s ease-in-out infinite;
+  animation: animate 30s ease-in-out infinite;
   margin: 20px 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -193,7 +273,7 @@ img {
   position: absolute;
   font-size: 2.8rem;
   background-color: var(--hover);
-  left: 40%;
+  left: 34%;
   top: 340px;
   mix-blend-mode: screen;
   padding: 8px 25px;
@@ -203,7 +283,7 @@ img {
 .header-outer h2::after {
   position: absolute;
   content: "";
-  background: var(--hover);
+  background: var(--gold);
   height: 15px;
   width: 15px;
   top: 0;
@@ -214,19 +294,19 @@ img {
 @keyframes animate {
   0%,
   100% {
-    background-image: url("/Construction images/service.jpg");
+    background-image: url("/Construction images/home1.jpg");
   }
 
   25% {
-    background-image: url("/Construction images/contact.jpg");
+    background-image: url("/Construction images/home2.jpg");
   }
 
   50% {
-    background-image: url("/Construction images/media.jpg");
+    background-image: url("/Construction images/home3.jpg");
   }
 
   75% {
-    background-image: url("/Construction images/gallery.jpg");
+    background-image: url("/Construction images/home4.jpg");
   }
 }
 
@@ -276,7 +356,7 @@ img {
 }
 
 /*==================================== About Description ================================== */
-.about-section {
+.about-sections {
   background: url("/Construction images/about.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -285,7 +365,7 @@ img {
   height: 65vh;
 }
 
-.about-section h1 {
+.about-sections h1 {
   color: var(--pure-white);
   position: absolute;
   top: 265px;
@@ -293,12 +373,16 @@ img {
   font-size: 3.5rem;
 }
 
+.about-all-tab {
+  padding: 5px 29px 60px;
+}
+
 .tab-titles {
   display: flex;
   text-align: center;
   justify-content: center;
   gap: 4rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: var(--lg-xx);
   color: var(--light-gray);
   border-top: 3px solid var(--gold);
@@ -312,12 +396,12 @@ img {
 
 .tab-titles > p::before {
   content: "";
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   background-color: var(--gold);
   position: absolute;
   border-radius: 50%;
-  bottom: 52px;
+  bottom: 39px;
   left: 35px;
 }
 
@@ -351,6 +435,7 @@ img {
 
 .tab-titles {
   margin-top: 19px;
+  gap: 19rem;
 }
 
 .tab-content ul li {
@@ -367,8 +452,40 @@ img {
   display: none;
 }
 
+.mission img {
+  /* width: 40%; */
+  height: 80vh;
+  object-position: center;
+  object-fit: fill;
+}
+
+.tab-image-flex {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; */
+}
+
 .tab-content.active-tab {
   display: block;
+}
+
+.mission-details-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 16rem;
+  padding: 9px 55px;
+}
+
+.mission-details-flex-i p {
+  color: var(--light-gray);
+}
+
+.mission-details-flex-ii h2 {
+  color: var(--light-gray);
+  font-size: 2.5rem;
 }
 
 .about-text h2 {
@@ -1000,9 +1117,9 @@ textarea {
   background: linear-gradient(var(--gold), var(--yellow));
   position: fixed;
   bottom: 26px;
-  right: 29px;
+  right: 8px;
   width: 50px;
-  top: 550px;
+  top: 520px;
   height: 50px;
   border-radius: 50%;
   align-items: center;
@@ -1107,7 +1224,7 @@ textarea {
   display: flex;
   cursor: pointer;
   background: var(--gold);
-  top: 200px;
+  top: 290px;
 }
 
 .contact-social-link a i {
@@ -1131,9 +1248,29 @@ textarea {
   .container {
     max-width: 1200px;
   }
+
+  .home-details-flex-i h2 {
+    font-size: 2.5rem;
+  }
+  .home-details-flex-ii {
+    flex-basis: 100%;
+  }
+
+  .home-details-flex-i {
+    flex-basis: 60%;
+  }
 }
 
-@media all and (min-width: 300px) and (max-width: 890px) {
+@media all and (min-width: 200px) and (max-width: 910px) {
+  .home-details-links-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+
+@media all and (min-width: 200px) and (max-width: 890px) {
   .header-description h3 {
     font-size: 28px;
   }
@@ -1186,12 +1323,35 @@ textarea {
     flex-direction: column-reverse;
   }
 
+  .mission-details-flex {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .home-details-flex {
+    display: block;
+  }
+
+  .tab-titles {
+    gap: 8rem;
+  }
+
   .openHours-flex {
     display: block;
   }
 
   .openHours-flex-2 {
     text-align: center;
+  }
+
+  .home-details-links-flex {
+    display: block;
+  }
+
+  .home-details-links-flex-i,
+  .home-details-links-flex-ii,
+  .home-details-links-flex-iii {
+    margin: 15px 0;
   }
 
   .service-story-flex {
@@ -1333,8 +1493,9 @@ textarea {
   .media-section,
   .home-section,
   .contact-section,
-  .about-section,
-  .Service-section {
+  .about-sections,
+  .Service-section,
+  .home-section {
     height: 35vh;
   }
 
@@ -1342,9 +1503,13 @@ textarea {
   .contact-section h1,
   .home-section h1,
   .Service-section h1,
-  .about-section h1 {
+  .about-sections h1 {
     top: 165px;
     font-size: 3rem;
+  }
+
+  .header-background h2 {
+    left: 20%;
   }
 }
 
@@ -1417,7 +1582,8 @@ textarea {
   .media-section h1,
   .Service-section h1,
   .contact-section,
-  .home-section {
+  .home-section,
+  .about-sections {
     left: 35%;
   }
 
@@ -1431,6 +1597,20 @@ textarea {
   }
 
   .tab-titles {
+  }
+
+  .header-outer h2 {
+    font-size: 2rem;
+    left: 12%;
+    top: 190px;
+  }
+
+  .header-background {
+    height: 30vh;
+  }
+
+  .mission-details-flex-ii h2 {
+    font-size: 2rem;
   }
 }
 
@@ -1453,5 +1633,20 @@ textarea {
 
   .tab-titles > p::before {
     bottom: 32px;
+  }
+
+  .header-outer h2 {
+    font-size: 1.6rem;
+    left: 9%;
+    top: 190px;
+  }
+
+  .media-section h1,
+  .contact-section h1,
+  .home-section h1,
+  .Service-section h1,
+  .about-sections h1 {
+    top: 165px;
+    font-size: 2rem;
   }
 }
