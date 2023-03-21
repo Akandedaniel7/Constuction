@@ -1324,8 +1324,9 @@ textarea {
   }
 
   .mission-details-flex {
-    flex-direction: column;
+    display: block;
     gap: 3rem;
+    padding: 9px 0;
   }
 
   .home-details-flex {
