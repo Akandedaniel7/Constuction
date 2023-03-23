@@ -1201,9 +1201,13 @@ textarea {
 }
 
 .coder-details a {
-  color: var(--light-gray);
+  color: var(--hover);
+  transition: var(--transition);
 }
 
+.coder-details a:hover {
+  color: var(--light-gray);
+}
 .socialMedia-links {
   position: fixed;
   bottom: 16px;
