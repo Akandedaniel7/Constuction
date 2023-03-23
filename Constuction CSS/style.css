@@ -456,17 +456,9 @@ img {
 }
 
 .mission img {
-  /* width: 40%; */
   height: 80vh;
   object-position: center;
-  object-fit: fill;
-}
-
-.tab-image-flex {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative; */
+  object-fit: cover;
 }
 
 .tab-content.active-tab {
@@ -1242,7 +1234,7 @@ textarea {
 }
 
 .contact-social-link i:hover {
-  color: var(--gold);
+  color: var(--hover);
 }
 /* =============== Break Points ============ */
 
