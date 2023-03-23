@@ -7,6 +7,10 @@
   height: 65vh;
 }
 
+.gallery-text {
+  padding-left: 20px;
+}
+
 .gallery-section h1 {
   color: var(--pure-white);
   position: absolute;
