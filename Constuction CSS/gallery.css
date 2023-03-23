@@ -59,3 +59,11 @@
     font-size: 1.4rem;
   }
 }
+
+@media all and (max-width: 390px) {
+  .gallery-section h1 {
+    top: 165px;
+    font-size: 3rem;
+    left: 29%;
+  }
+}
