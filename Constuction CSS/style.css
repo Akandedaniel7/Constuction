@@ -1080,7 +1080,7 @@ textarea {
   color: var(--pure-white);
   position: absolute;
   top: 165px;
-  left: 45%;
+  left: 35%;
   font-size: 3.5rem;
 }
 
@@ -1583,9 +1583,9 @@ textarea {
 
   .media-section h1,
   .Service-section h1,
-  .contact-section,
-  .home-section,
-  .about-sections {
+  .contact-section h1,
+  .home-section h1,
+  .about-sections h1 {
     left: 35%;
   }
 
@@ -1616,7 +1616,7 @@ textarea {
   }
 }
 
-@media all and (max-width: 380px) {
+@media all and (max-width: 390px) {
   .about-story-flex-2 p {
     padding-right: 0;
   }
