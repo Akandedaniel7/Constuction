@@ -1112,9 +1112,9 @@ textarea {
   background: linear-gradient(var(--gold), var(--yellow));
   position: fixed;
   bottom: 26px;
-  right: 8px;
+  left: 8px;
   width: 50px;
-  top: 600px;
+  top: 590px;
   height: 50px;
   border-radius: 50%;
   align-items: center;
